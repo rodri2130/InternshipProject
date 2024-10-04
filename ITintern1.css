@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box; /* Helps with layout */
+    font-family: sans-serif; 
+    padding: 0;
+    margin: 0;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px;
+}
+
+.subtopic {
+    text-align: center;  /* Centers the text horizontally */
+    font-weight: bold;   /* Makes the text bold */
+    font-size: 1.8em;    /* Increase the size for better visibility */
+    margin-top: 20px;    /* Adds space above the subtopic */
+    color: #4c8baf;      /* Green color for emphasis */
+}
+
+.backbttn {
+    text-align: center;  /* Centers the text horizontally */
+    font-weight: bold;   /* Makes the text bold */
+    font-size: 1.8em;    /* Increase the size for better visibility */
+    margin-top: 20px;    /* Adds space above the subtopic */
+    color: #4c8baf;      /* Green color for emphasis */
+}
+
+/* Header styling with a background image and contrast overlay */
+header {
+    position: relative;  /* Ensure relative positioning for the overlay */
+    background-image: url(./Images/K&B.jpg);   /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    background-color: #2f00ff;  /* Fallback color if the image doesn't load */
+    overflow: hidden;  /* Make sure the overlay fully covers the header */
+}
+
+/* Dark overlay to increase contrast */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
+    z-index: 1;
+}
+
+/* Heading styling */
+h1, h2 {
+    position: relative;  /* Ensure the text is above the overlay */
+    z-index: 2;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);  /* Text shadow for better readability */
+}
+
+/* Main section styling */
+main {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;               /* Use flexbox for centering */
+    flex-direction: column;      /* Stack items vertically */
+    align-items: center;         /* Center horizontally */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Bold text styling */
+b {
+    color: #000000;
+}
+
+/* Button styling */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #2f00ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2200cc;  /* Darker blue on hover */
+}
+
+#new-user-guide {
+    background-color: #f9f9f9;  /* Light background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Slight shadow for effect */
+}

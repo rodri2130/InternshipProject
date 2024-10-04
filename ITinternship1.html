@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT K&B Transportation</title>
+    <script defer src="./project.js"></script>
+    <link rel="stylesheet" href="./ITintern1.css">
+</head>
+<body>
+
+<header>
+    <h1>IT K&B Transportation</h1>
+    <h2>By Rodrigo Iraheta</h2>
+    <img src="./Images/K&B.png">
+</header>
+
+<main>
+    <!-- Centered Subtopic Section -->
+    <p class="subtopic"><b>IT K&B Transportation</b></p>
+
+    <p>Welcome to the IT K&B Transportation website. We are dedicated to providing high-quality transportation services that are powered by the latest in Information Technology. We are going to design a website where we can find most of the troubleshooting from IT and how to fix it.</p>
+    <p>Below we can find some general topics from the IT department:</p>
+
+    <div class="button-container">
+        <button class="btn" onclick="showNewUserGuide();">New User</button>
+        <button class="btn" onclick="alert('AS400 Clicked')">AS400</button>
+        <button class="btn" onclick="alert('GoTo Resolve Clicked')">GoTo Resolve Installation</button>
+        <button class="btn" onclick="alert('Computer Set up')">Computer Set up</button>
+    </div>
+
+    <div id="new-user-guide" style="display: none;"> <!-- Initially hidden -->
+        <h2>Step-by-Step Guide</h2>
+        <ol>
+            <li>Open as400.</li>
+            <li>Log in with your credentials (user = 1st letter of your first name and 1st 4 letters of your last name) (your password).</li>
+            <img src="./Images/step1.png" alt="Step 1: Open AS400" style="display: block; margin: 20px auto; max-width: 80%;">
+            <li>Select <b>"1"</b>-> K&B transportation.</li>
+            <img src="./Images/step2.png" alt="Step 2: K&B Transportation" style="display: block; margin: 20px auto; max-width: 80%;">
+            <li>Select <b>"3"</b> -> K&B Custom Menu.</li>
+            <img src="./Images/step3.png" alt="Step 3: K&B Custom Menu" style="display: block; margin: 20px auto; max-width: 80%;">
+            <li>Select <b>"18"</b> IT Operations Menu.</li>
+            <img src="./Images/step4.png" alt="Step 4: IT Operations Menu" style="display: block; margin: 20px auto; max-width: 80%;">
+            <li>Select <b>"3"</b> New Hire Set Up Menu.</li>
+            <img src="./Images/step5.png" alt="Step 5: New Hire Set Up Menu" style="display: block; margin: 20px auto; max-width: 80%;">
+            <li>Select <b>"1"</b> User Profile.</li>
+            <img src="./Images/step6.png" alt="Step 6: User Profile" style="display: block; margin: 20px auto; max-width: 80%;">
+            <li>Write <b>"ALL"</b>.</li>
+            <img src="./Images/step7.png" alt="Step 7: Write ALL" style="display: block; margin: 20px auto; max-width: 80%;">
+        </ol>
+        <button class="backbttn" onclick="goBackToMainMenu();">Go Back to Main Menu</button>
+    </div>
+</main>
+
+</body>
+</html>
