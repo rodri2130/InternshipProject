@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box; /* Helps with layout */
-    font-family: sans-serif; 
+    box-sizing: border-box;
+    font-family: sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -8,38 +8,56 @@
 /* General styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e6e9ee; /* Softer background color for better contrast */
     margin: 0;
     padding: 50px;
+    font-size: 1.1em; /* Increased font size */
+    line-height: 1.6; /* Better readability */
 }
 
 .subtopic {
-    text-align: center;  /* Centers the text horizontally */
-    font-weight: bold;   /* Makes the text bold */
-    font-size: 1.8em;    /* Increase the size for better visibility */
-    margin-top: 20px;    /* Adds space above the subtopic */
-    color: #4c8baf;      /* Green color for emphasis */
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2em; /* Increased size for better visibility */
+    margin-top: 20px;
+    color: #e6e9ee;
 }
 
 .backbttn {
-    text-align: center;  /* Centers the text horizontally */
-    font-weight: bold;   /* Makes the text bold */
-    font-size: 1.8em;    /* Increase the size for better visibility */
-    margin-top: 20px;    /* Adds space above the subtopic */
-    color: #4c8baf;      /* Green color for emphasis */
+    background-color: #ececec;
+    color: rgb(14, 11, 11);
+    padding: 15px 30px; /* Larger padding */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em; /* Larger font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
+.backbttn:hover {
+    background-color: #282096;
+    color: #e6e9ee;
+    transform: scale(1.05); /* Slightly larger on hover for a smooth effect */
+}
+.backbttn-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically if needed */
+    margin-top: 20px; /* Adjusts vertical spacing */
+}
+
+
 
 /* Header styling with a background image and contrast overlay */
 header {
-    position: relative;  /* Ensure relative positioning for the overlay */
-    background-image: url(./Images/K&B.jpg);   /* Path to your image */
+    position: relative;
+    background-image: url(./Images/K&B.jpg);
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 60px 0;
+    padding: 80px 0; /* Increased padding */
     text-align: center;
-    background-color: #2f00ff;  /* Fallback color if the image doesn't load */
-    overflow: hidden;  /* Make sure the overlay fully covers the header */
+    background-color: #2f00ff;
+    overflow: hidden;
 }
 
 /* Dark overlay to increase contrast */
@@ -50,34 +68,33 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
-/* Heading styling */
 h1, h2 {
-    position: relative;  /* Ensure the text is above the overlay */
+    position: relative;
     z-index: 2;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);  /* Text shadow for better readability */
+    font-size: 3em; /* Increased size */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 /* Main section styling */
 main {
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 30px;
+    padding: 30px;
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;               /* Use flexbox for centering */
-    flex-direction: column;      /* Stack items vertically */
-    align-items: center;         /* Center horizontally */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Paragraph styling */
 p {
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.5em; /* Larger font size for body text */
+    color: #353434;
 }
 
 /* Bold text styling */
@@ -87,30 +104,31 @@ b {
 
 /* Button styling */
 .button-container {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
-    gap: 10px;
+    gap: 20px; /* More spacing between buttons */
 }
 
 .btn {
-    background-color: #2f00ff;
-    color: white;
-    padding: 10px 20px;
+    background-color: #ececec;
+    color: rgb(14, 11, 11);
+    padding: 15px 30px; /* Larger padding */
     border: none;
-    border-radius: 5px;
-    font-size: 1em;
+    border-radius: 8px;
+    font-size: 1.2em; /* Larger font size for buttons */
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .btn:hover {
-    background-color: #2200cc;  /* Darker blue on hover */
+    background-color: #282096;
+    color: #ececec;
+    transform: scale(1.05); /* Slightly larger on hover for a smooth effect */
 }
 
 #new-user-guide {
-    background-color: #f9f9f9;  /* Light background */
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Slight shadow for effect */
+    background-color: #e6e9ee;
+    padding: 30px;
+    margin: 100px 0;
+    border-radius: 50px
 }
