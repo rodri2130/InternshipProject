@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e9ee; /* Softer background color for better contrast */
+    margin: 0;
+    padding: 50px;
+    font-size: 1.1em; /* Increased font size */
+    line-height: 1.6; /* Better readability */
+}
+
+.subtopic {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2em; /* Increased size for better visibility */
+    margin-top: 20px;
+    color: #e6e9ee;
+}
+
+.backbttn {
+    background-color: #ececec;
+    color: rgb(14, 11, 11);
+    padding: 15px 30px; /* Larger padding */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em; /* Larger font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.backbttn:hover {
+    background-color: #282096;
+    color: #e6e9ee;
+    transform: scale(1.05); /* Slightly larger on hover for a smooth effect */
+}
+.backbttn-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically if needed */
+    margin-top: 20px; /* Adjusts vertical spacing */
+}
+
+
+
+/* Header styling with a background image and contrast overlay */
+header {
+    position: relative;
+    background-image: url(./Images/K&B.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0; /* Increased padding */
+    text-align: center;
+    background-color: #2f00ff;
+    overflow: hidden;
+}
+
+/* Dark overlay to increase contrast */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+h1, h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 3em; /* Increased size */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Main section styling */
+main {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.5em; /* Larger font size for body text */
+    color: #353434;
+}
+
+/* Bold text styling */
+b {
+    color: #000000;
+}
+
+/* Button styling */
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px; /* More spacing between buttons */
+}
+
+.btn {
+    background-color: #ececec;
+    color: rgb(14, 11, 11);
+    padding: 15px 30px; /* Larger padding */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em; /* Larger font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #282096;
+    color: #ececec;
+    transform: scale(1.05); /* Slightly larger on hover for a smooth effect */
+}
+
+#new-user-guide {
+    background-color: #e6e9ee;
+    padding: 30px;
+    margin: 100px 0;
+    border-radius: 50px
+}
+
+.search-container {
+    position: absolute;
+    top: 20px;  /* Adjust based on your header's height */
+    right: 30px;  /* Adjust the distance from the right corner */
+    z-index: 10;  /* Ensure it's on top */
+}
+
+#search-bar {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 250px;  /* Adjust width */
+    transition: border-color 0.3s;
+}
+
+#search-bar:focus {
+    border-color: #2f00ff;  /* Change the border color on focus */
+    outline: none;
+}
+.search-container {
+    position: absolute;
+    top: 20px;  /* Adjust based on your header's height */
+    right: 30px;  /* Adjust the distance from the right corner */
+    z-index: 10;  /* Ensure it's on top */
+}
+
+#search-bar {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 250px;  /* Adjust width */
+    transition: border-color 0.3s;
+}
+
+#search-bar:focus {
+    border-color: #2f00ff;  /* Change the border color on focus */
+    outline: none;
+}
