@@ -15,47 +15,56 @@
 
 <main>
     <h2>Step-by-Step Guide for the New-user</h2>
-    <ol>
-        <li>Open as400.</li>
-        <li>Log in with your credentials (user = 1st letter of your first name and 1st 4 letters of your last name) (your password).</li>
+    <pre> 
+        1) Open as400.</li>
+        2) Log in with your credentials (user = 1st letter of your first name and 1st 4 letters of your last name) (your password).</li>
         <img src="./Images/step1.png" alt="Step 1: Open AS400" style="display: block; margin: 20px auto; max-width: 60%;">
-        <li>Select <b>"1"</b>-> K&B transportation.</li>
+        3) Select <b>"1"</b>-> K&B transportation.</li>
         <img src="./Images/step2.png" alt="Step 2: K&B Transportation" style="display: block; margin: 20px auto; max-width: 80%;">
-        <li>Select <b>"3"</b> -> K&B Custom Menu.</li>
+        4) Select <b>"3"</b> -> K&B Custom Menu.</li>
         <img src="./Images/step3.png" alt="Step 3: K&B Custom Menu" style="display: block; margin: 20px auto; max-width: 80%;">
-        <li>Select <b>"18"</b> IT Operations Menu.</li>
+        5) Select <b>"18"</b> IT Operations Menu.</li>
         <img src="./Images/step4.png" alt="Step 4: IT Operations Menu" style="display: block; margin: 20px auto; max-width: 80%;">
-        <li>Select <b>"3"</b> New Hire Set Up Menu.</li>
+        6) Select <b>"3"</b> New Hire Set Up Menu.</li>
         <img src="./Images/step5.png" alt="Step 5: New Hire Set Up Menu" style="display: block; margin: 20px auto; max-width: 60%;">
-        <li>Select <b>"1"</b> User Profile.</li>
+        7)Select <b>"1"</b> User Profile.</li>
         <img src="./Images/step6.png" alt="Step 6: User Profile" style="display: block; margin: 20px auto; max-width: 60%;">
-        <li>Write <b>"ALL"</b>.</li>
+        8) Write <b>"ALL"</b>.</li>
         <img src="./Images/step7.png" alt="Step 7: Write ALL" style="display: block; margin: 20px auto; max-width: 60%;">
-        <li><b>Page down</b> to find the <b>specific user to copy</b> IBM | profile from.</li>
+        9) <b>Page down</b> to find the <b>specific user to copy</b> IBM | profile from.</li>
         <img src="./Images/step8.png" alt="Step 8:copy user " style="display: block; margin: 20px auto; max-width: 60%;">
-        <li><b>Select "3</b> next to User Profile to copy and press <b>Enter key.</b></li>
+        10)<b>Select "3</b> next to User Profile to copy and press <b>Enter key.</b></li>
         <img src="./Images/step9.png" alt="Step 9: Copy and Enter" style="display: block; margin: 20px auto; max-width: 60%;">
-        <li><b>Enter the name of the new user profile</b> (first character of first name, first four characters of last name).</li>
-        <li><b>Enter first and last name with quotes </b> in <b>"Text description"</b> field.</li>
+        11) <b>Enter the name of the new user profile</b> (first character of first name, first four characters of last name).</li>
+              <b>Enter first and last name with quotes </b> in <b>"Text description"</b> field.</li>
         <img src="./Images/step10.png" alt="First and last name" style="display: block; margin: 20px auto; max-width: 60%;">
-        <li>Press <b>Enter</b> key to create new IBM (AS400) profile.</li>
-        <li>After pressing the Enter key, the system returns to the Work with User Profiles screen.</li>
-        <li>Enter 2 in the Opt field next to the User Profile. Press Enter key.</li>
+        12) Press <b>Enter</b> key to create new IBM (AS400) profile.</li>
+              After pressing the Enter key, the system returns to the Work with User Profiles screen.</li>
+              Enter 2 in the Opt field next to the User Profile. Press Enter key.</li>
         <img src="./Images/step11.png" alt="press 2 next to user profile" style="display: block; margin: 20px auto; max-width: 60%;">
-        <li>Press F10. Page down (five times) to verify information matches that of the copied User Profile.</li>
+        13) Press F10. Page down (five times) to verify information matches that of the copied User Profile.</li>
         <img src="./Images/step12.png" alt="Verify steps" style="display: block; margin: 20px auto; max-width: 60%;">
         <img src="./Images/step13.png" alt="Verify steps pt.2" style="display: block; margin: 20px auto; max-width: 60%;">
-        <li>Verify Message Queue shows username.</li>
-        <li>Verify Library shows QUSRSYS. Page down.</li>
+        14) Verify Message Queue shows the <b>username.</b></li>
+              Verify Library shows <b>QUSRSYS</b>. Page down.</li>
         <img src="./Images/step14.png" alt="Verify Message Queue" style="display: block; margin: 20px auto; max-width: 60%;">
-        <li>No changes. Page down.</li>
+        16) No changes. Page down.</li>
         <img src="./Images/step15.png" alt="Verify Message pt.2" style="display: block; margin: 20px auto; max-width: 60%;">
-        <li>No changes. Press Enter key.</li>
+        17) No changes. Press Enter key.</li>
         <img src="./Images/step16.png" alt="Verify Message pt.3" style="display: block; margin: 20px auto; max-width: 60%;">
-        <li>Returned to the Work with User Profiles screen</li>
+        19) Returned to the Work with User Profiles screen</li>
         <img src="./Images/step17.png" alt="Return to User Profile screen" style="display: block; margin: 20px auto; max-width: 60%;">
-    </ol>
-
+    </pre>
+    <p>
+        After you did the first steps, now you have to do the set up according tou your department:
+    </p>
+    <label for="department-select">Choose your department: </label>
+        <select id="department-select">
+        <option value="drive-manager">Drive Manager Master</option>
+        <option value="dispatcher">Dispatcher</option>
+        <option value="recruiters">Recruiters</option>
+        <option value="csr">Customer Service Representative</option>
+    </select>
     <div class="backbttn-container">
         <button class="backbttn" onclick="window.location.href='ITinternship1.html';">Go Back to Main Menu</button>
     </div>
