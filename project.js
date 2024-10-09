@@ -44,18 +44,23 @@ function handleDepartmentSelection() {
     // Action based on the selected department
     switch (selectedDepartment) {
         case 'drive-manager':
-            alert('Drive Manager Master selected. Please follow the department-specific instructions.');
+            // Redirect to the Drive Manager Master page
+            window.location.href = 'DriveManagerMaster.html';
             break;
         case 'dispatcher':
-            alert('Dispatcher selected. Please follow the department-specific instructions.');
+            // Redirect to the Dispatcher page (replace with actual page when ready)
+            window.location.href = 'dispatcher.html';
             break;
         case 'recruiters':
-            alert('Recruiters selected. Please follow the department-specific instructions.');
+            // Redirect to the Recruiters page (replace with actual page when ready)
+            window.location.href = 'recruiters.html';
             break;
         case 'csr':
-            alert('Customer Service Representative selected. Please follow the department-specific instructions.');
+            // Redirect to the Customer Service Representative page (replace with actual page when ready)
+            window.location.href = 'csr.html';
             break;
         default:
+            // Default case for invalid selection
             alert('Please select a valid department.');
     }
 }

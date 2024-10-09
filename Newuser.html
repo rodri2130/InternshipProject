@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New User Guide - IT K&B Transportation</title>
     <link rel="stylesheet" href="./ITintern1.css">
+    <script src="./project.js" defer></script> <!-- Make sure this points to your JS file -->
+
 </head>
 <body>
 
@@ -56,15 +58,18 @@
         <img src="./Images/step17.png" alt="Return to User Profile screen" style="display: block; margin: 20px auto; max-width: 60%;">
     </pre>
     <p>
-        After you did the first steps, now you have to do the set up according tou your department:
+        After you did the first steps, now you have to do the setup according to your department:
     </p>
-    <label for="department-select">Choose your department: </label>
-        <select id="department-select">
+
+    <select id="department-select">
+        <option value="" disabled selected>Select a department</option>
         <option value="drive-manager">Drive Manager Master</option>
         <option value="dispatcher">Dispatcher</option>
         <option value="recruiters">Recruiters</option>
         <option value="csr">Customer Service Representative</option>
     </select>
+
+    <!-- Button to go back to main menu -->
     <div class="backbttn-container">
         <button class="backbttn" onclick="window.location.href='ITinternship1.html';">Go Back to Main Menu</button>
     </div>
