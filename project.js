@@ -43,21 +43,17 @@ function handleDepartmentSelection() {
 
     // Action based on the selected department
     switch (selectedDepartment) {
-        case 'drive-manager':
+        case 'dispatchers':
             // Redirect to the Drive Manager Master page
-            window.location.href = 'DriveManagerMaster.html';
-            break;
-        case 'dispatcher':
-            // Redirect to the Dispatcher page (replace with actual page when ready)
-            window.location.href = 'dispatcher.html';
+            window.location.href = 'Dispatchers.html';
             break;
         case 'recruiters':
             // Redirect to the Recruiters page (replace with actual page when ready)
-            window.location.href = 'recruiters.html';
+            window.location.href = 'Recruiters.html';
             break;
         case 'csr':
             // Redirect to the Customer Service Representative page (replace with actual page when ready)
-            window.location.href = 'csr.html';
+            window.location.href = 'CSR.html';
             break;
         default:
             // Default case for invalid selection
@@ -67,3 +63,16 @@ function handleDepartmentSelection() {
 
 // Event listener to trigger when a department is selected
 document.getElementById('department-select').addEventListener('change', handleDepartmentSelection);
+
+// Function to toggle the visibility of the instructions for creating the innovative user profile
+function toggleInnovativeUserProfile() {
+    const instructionsDiv = document.getElementById('innovative-user-profile');
+    if (instructionsDiv.style.display === 'none' || instructionsDiv.style.display === '') {
+        instructionsDiv.style.display = 'block'; // Show the instructions
+    } else {
+        instructionsDiv.style.display = 'none'; // Hide the instructions
+    }
+}
+
+// Event listener for the button to show/hide the innovative user profile instructions
+document.querySelector('.backbttn').addEventListener('click', toggleInnovativeUserProfile);

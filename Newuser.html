@@ -11,12 +11,12 @@
 
 <header>
     <h1>IT K&B Transportation</h1>
-    <h2>By Rodrigo Iraheta</h2>
 </header>
 
 <main>
     <h2>Step-by-Step Guide for the New-user</h2>
-    <pre> 
+    
+    <pre>
         1) Open as400.
         2) Log in with your credentials (user = 1st letter of your first name and 1st 4 letters of your last name) (your password).
         <img src="./Images/step1.png" alt="Step 1: Open AS400" style="display: block; margin: 20px auto; max-width: 60%;">
@@ -55,15 +55,68 @@
         <img src="./Images/step16.png" alt="Verify Message pt.3" style="display: block; margin: 20px auto; max-width: 60%;">
         19) Returned to the Work with User Profiles screen
         <img src="./Images/step17.png" alt="Return to User Profile screen" style="display: block; margin: 20px auto; max-width: 60%;">
+        Next step are the instructions tu create Innovative User Profile, click the button below to show the steps  
     </pre>
-    <p>
+
+    <pre>        
+        <button class="backbttn" onclick="toggleInstructions()"> 
+       <b>INSTRUCTIONS TO CREATE INNOVATIVE USER PROFILE</b>
+      </button>
+    </pre>   
+    
+
+    <!-- Hidden section for the additional instructions -->
+    <div id="innovative-user-profile">
+    <pre>
+        1) From the supervisor requesting the setup, ask for employee to copy Sessions (Innovative) profile from. Copy method is easier and faster.
+         Menu Path:	<b>1</b>(K&B Transportation Inc)	<b>3</b> (K&B Custom Menu)	<b>18</b> (IT Operations)
+         Choose option <b>3 (New Hire Set Up Menu).</b> 
+        <img src="./Images/Step18.png" alt="innovative-user-profile" style="display: block; margin: 20px auto; max-width: 60%;">
+        2) <b>Choose Option 2 (User ID and Initials).</b>
+        <img src="./Images/Step19.png" alt="Option 2" style="display: block; margin: 20px auto; max-width: 60%;">
+    
+        3) Using the supervisor (Schrunk or Fengler) recommendation of employee profile to copy from.
+        Example:  If new employee is replacing Adam Ackerman (AACKE), select AACKE Innovative User Profile to copy. In this example, AACKE Innovative Profile will be copied to create MTIMP 
+        Choose 3 to copy the Innovative User Profile and press Enter key.
+        <img src="./Images/Step20.png" alt="Choose 3" style="display: block; margin: 20px auto; max-width: 60%;">
+        4) Enter username of new employee in User I.D. field and press Enter key.
+        Name should automatically fill in.
+        Enter new employee initials. Initials are required and must be unique.
+        Press F5 to Update.
+         <img src="./Images/Step21.png" alt="Press 5 to update" style="display: block; margin: 20px auto; max-width: 60%;">
+        5) Bill Authorization (F9) screen appears.
+        Enter information in below screen. Should look at follows.
+        Choose F5 for Update
+        <img src="./Images/Step22.png" alt="Press 5 to update" style="display: block; margin: 20px auto; max-width: 60%;">
+        6) Choose Shift F12 (F24) for More.
+        Choose Shift F2 (F14) for Fuel Authorization.
+        <img src="./Images/Step23.png" alt="Fuel Authorization" style="display: block; margin: 20px auto; max-width: 60%;">
+        7) Enter Y in Card Number.
+        Enter Y in Purchase Limits.
+        Enter Y in Cash Limits.
+        Enter Y in Advance Issue. F5 to Update
+        <img src="./Images/Step24.png" alt="Select Y's" style="display: block; margin: 20px auto; max-width: 60%;">
+        8) F3 to Exit
+        <img src="./Images/Step25.png" alt="F3 to Exit" style="display: block; margin: 20px auto; max-width: 60%;">
+        9) <b>Choose Option 3 (Mini Menu Setup).</b>
+        <img src="./Images/Step26.png" alt="Option 3" style="display: block; margin: 20px auto; max-width: 60%;">
+        10) Select Group (Dispatchers) and enter 2 and press Enter key to Change (add user to group).
+        <img src="./Images/Step27.png" alt="Option 3" style="display: block; margin: 20px auto; max-width: 60%;">
+        11) Page down to end of list and enter username of new employee.
+        Press F5 to Update.
+        <img src="./Images/Step28.png" alt="Press 5 to update" style="display: block; margin: 20px auto; max-width: 60%;">
+        12) Press F3 to Exit the following screen.
+        <img src="./Images/Step29.png" alt="Press F3 to Exit" style="display: block; margin: 20px auto; max-width: 60%;">
+    </pre>
+    </div>
+
+        <p>
         After you did the first steps, now you have to do the setup according to your department:
-    </p>
+        </p>
 
     <select id="department-select">
         <option value="" disabled selected>Select a department</option>
-        <option value="drive-manager">Drive Manager Master</option>
-        <option value="dispatcher">Dispatcher</option>
+        <option value="dispatchers">Dispatcher</option>
         <option value="recruiters">Recruiters</option>
         <option value="csr">Customer Service Representative</option>
     </select>
