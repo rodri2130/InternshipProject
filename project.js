@@ -73,6 +73,14 @@ function toggleInnovativeUserProfile() {
         instructionsDiv.style.display = 'none'; // Hide the instructions
     }
 }
-
+// Function to toggle the visibility of the instructions for creating the innovative user profile
+function togglesteps8and9and10() {
+    const steps8to10Div = document.getElementById('steps-8-9-10');
+    if (steps8to10Div.style.display === 'none' || steps8to10Div.style.display === '') {
+        steps8to10Div.style.display = 'block'; // Show the instructions
+    } else {
+        steps8to10Div.style.display = 'none'; // Hide the instructions
+    }
+}
 // Event listener for the button to show/hide the innovative user profile instructions
 document.querySelector('.backbttn').addEventListener('click', toggleInnovativeUserProfile);
