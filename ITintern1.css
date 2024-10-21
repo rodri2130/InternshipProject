@@ -33,19 +33,19 @@ body {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
+
 .backbttn:hover {
     background-color: #282096;
     color: #e6e9ee;
     transform: scale(1.05); /* Slightly larger on hover for a smooth effect */
 }
+
 .backbttn-container {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically if needed */
     margin-top: 20px; /* Adjusts vertical spacing */
 }
-
-
 
 /* Header styling with a background image and contrast overlay */
 header {
@@ -89,6 +89,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px; /* Limits width for better readability */
+    width: 100%;
 }
 
 /* Paragraph styling */
@@ -107,6 +109,7 @@ b {
     margin-top: 30px;
     display: flex;
     gap: 20px; /* More spacing between buttons */
+    justify-content: center;
 }
 
 .btn {
@@ -130,29 +133,9 @@ b {
     background-color: #e6e9ee;
     padding: 30px;
     margin: 100px 0;
-    border-radius: 50px
+    border-radius: 50px;
 }
 
-.search-container {
-    position: absolute;
-    top: 20px;  /* Adjust based on your header's height */
-    right: 30px;  /* Adjust the distance from the right corner */
-    z-index: 10;  /* Ensure it's on top */
-}
-
-#search-bar {
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-    width: 250px;  /* Adjust width */
-    transition: border-color 0.3s;
-}
-
-#search-bar:focus {
-    border-color: #2f00ff;  /* Change the border color on focus */
-    outline: none;
-}
 .search-container {
     position: absolute;
     top: 20px;  /* Adjust based on your header's height */
@@ -182,3 +165,200 @@ b {
     border-radius: 10px;
     margin-top: 20px;
 }
+
+/* Section Titles */
+h2 {
+    text-align: center;
+    font-size: 2.5em; /* Bigger size for main sections */
+    color: #2f00ff;
+    margin-bottom: 20px;
+}
+
+/* Preformatted text block styling */
+pre {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+    white-space: pre-wrap; /* Allows better text wrapping */
+    word-wrap: break-word; /* Prevents overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1200px; /* Limits width for better readability */
+    overflow-x: auto; /* Allows horizontal scroll for long lines */
+}
+
+/* Highlight headers inside preformatted text (steps and titles) */
+pre h3 {
+    font-size: 1.8em;
+    color: #2f00ff;
+    margin-bottom: 10px;
+}
+
+pre b {
+    color: #000; /* Bold text in pre will remain black */
+}
+
+/* Styling the ordered and unordered lists */
+pre ol, pre ul {
+    margin: 15px 0;
+    padding-left: 40px; /* More indentation for list items */
+}
+
+pre ol li, pre ul li {
+    margin-bottom: 10px;
+}
+
+/* Image styling inside pre tags */
+pre img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* Makes sure images are responsive */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Role Swap section header */
+.section-header {
+    font-size: 2em;
+    color: #333;
+    border-bottom: 2px solid #2f00ff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button-container .btn {
+    background-color: #2f00ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-container .btn:hover {
+    background-color: #1a007d;
+    transform: scale(1.05);
+}
+ /* THIS IS THE RSI CSS */ 
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e9ee; /* Softer background color for better contrast */
+    margin: 0;
+    padding: 20px; /* Adjusted padding */
+    font-size: 1.1em; /* Increased font size */
+    line-height: 1.6; /* Better readability */
+    display: flex; /* Center the main content */
+    justify-content: center;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+}
+
+/* Header styling with a background image and contrast overlay */
+header {
+    position: relative;
+    background-image: url(./Images/K&B.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0; /* Increased padding */
+    text-align: center;
+    width: 100%; /* Ensures full-width header */
+}
+
+/* Dark overlay to increase contrast */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 3em; /* Increased size */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Main section styling */
+main {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Limits width for better readability */
+    width: 100%;
+}
+
+/* Preformatted text block styling */
+pre {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+    white-space: pre-wrap; /* Allows better text wrapping */
+    word-wrap: break-word; /* Prevents overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1200px; /* Limits width for better readability */
+    overflow-x: auto; /* Allows horizontal scroll for long lines */
+}
+
+/* Highlight headers inside preformatted text (steps and titles) */
+pre h3 {
+    font-size: 1.8em;
+    color: #2f00ff;
+    margin-bottom: 10px;
+}
+
+/* Ensure images are responsive */
+pre img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* Makes sure images are responsive */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    pre {
+        font-size: 1rem;
+    }
+}
+ 
+/* THE RSI CSS FINISH HERE */
